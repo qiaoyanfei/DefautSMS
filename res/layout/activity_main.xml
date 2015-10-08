@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qiao.defautsms.SMSMessageActivity" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#11827b"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/inputNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:text="请输入手机号：" />
+
+        <EditText
+            android:id="@+id/phoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#11827b"
+        android:layout_below="@+id/top"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/inputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         
+            android:text="请输入信息内容：" />
+
+        <EditText
+            android:id="@+id/smsInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        
+            android:ems="10" />
+    </LinearLayout>
+ 
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inputNum"
+        android:layout_centerVertical="true"
+        android:text="存储" />
+    
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_alignTop="@+id/save"
+        android:text="删除" />
+      <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/save"
+       android:layout_marginLeft="160dp"
+        android:text="发送" />
+    
+
+</RelativeLayout>
